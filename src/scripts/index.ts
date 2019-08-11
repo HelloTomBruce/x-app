@@ -11,14 +11,14 @@ const xTouch = new XTouch();
 const xFullpage = new XFullpage({
     root: '#root',
     pageClassName: 'x-page',
-    loop: false
+    loop: false,
+    flex: true,
+    indicator: false
 });
 
 new XLoad({
-    wrapper: '#root',
-    attr: 'data-src',
-    prior: 'prior'
-});
+    wrapper: '#root'    
+})
 
 const xMusicObj = new XMusic({ src, playImg, pauseImg: playImg });
 
